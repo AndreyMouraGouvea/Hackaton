@@ -1,6 +1,16 @@
 <?php
 
 include 'connect.php';
+$id = $_GET['updateid'];
+$sql = "SELECT * FROM `tb_user` WHERE id_user = $id";
+$result = mysqli_query($con, $sql);
+$row = mysqli_fetch_assoc($result);
+$name = $row['nm_user'];
+$email = $row['email'];
+$mobile = $row['nr_telefone'];
+$password = $row['ds_senha'];
+
+
 if (isset($_POST['submit'])) {
 
     $name = $_POST['name'];
@@ -22,31 +32,42 @@ if (isset($_POST['submit'])) {
         echo '<script>window.location = "' . $pagina . '"</script>';
     }
 
-    //new user
 
-    function newUser($name, $email, $mobile, $password)
+    function updateUser($name, $email, $mobile, $password, $id)
     {
 
-        $sql = "INSERT INTO `tb_user` (nm_user, email, nr_telefone, ds_senha) 
-            VALUES ('$name', '$email', '$mobile', '$password')";
+        $sql = "UPDATE `tb_user` SET 
+        id_user = '$id',
+        nm_user = '$name',
+        email = '$email',
+        nr_telefone = '$mobile',
+        ds_senha = '$password' 
+        WHERE id_user = '$id'
+        ";
 
         $result = mysqli_query($GLOBALS['con'], $sql);
 
         if ($result) {
-            alert('Usuário inserido com sucesso!');
+            alert('Usuário atualizado com sucesso!');
         } else {
             die(mysqli_error($GLOBALS['con']));
         }
     }
 
 
-    $sql = "INSERT INTO `tb_user` (nm_user, email, nr_telefone, ds_senha) 
-            VALUES ('$name', '$email', '$mobile', '$password')";
+    $sql = "UPDATE `tb_user` SET 
+     id_user = '$id',
+     nm_user = '$name',
+     email = '$email',
+     nr_telefone = '$mobile',
+     ds_senha = '$password' 
+     WHERE id_user = '$id'
+     ";
 
     $result = mysqli_query($con, $sql);
 
     if ($result) {
-        alert('Usuário inserido com sucesso!');
+        alert('Usuário atualizado com sucesso!');
         page('display.php');
         //header('location: display.php');
     } else {
@@ -83,26 +104,36 @@ if (isset($_POST['submit'])) {
         <form method="POST">
             <div class="form-group">
                 <label class='my-2'>Nome: </label>
-                <input type='text' class='form-control' placeholder="Escreva o seu nome" name='name' autocomplete="off">
+                <input type='text' class='form-control' placeholder="Escreva o seu nome" name='name' autocomplete="off"
+                value=<?php echo $name; ?>
+                >
             </div>
 
             <div class="form-group">
                 <label class='my-2'>Email: </label>
-                <input type='email' class='form-control' placeholder="Escreva o seu email" name='email' autocomplete="off">
+                <input type='email' class='form-control' placeholder="Escreva o seu email" name='email' autocomplete="off"
+                value=<?php echo $email; ?>
+                >
+                
             </div>
 
             <div class="form-group">
                 <label class='my-2'>Telefone: </label>
-                <input type='text' class='form-control' placeholder="Escreva o seu telefone" name='mobile' autocomplete="off">
+                <input type='text' class='form-control' placeholder="Escreva o seu telefone" name='mobile' autocomplete="off"
+                value=<?php echo $mobile; ?>
+                >
             </div>
 
             <div class="form-group">
                 <label class='my-2'>Senha: </label>
-                <input type='password' class='form-control' placeholder="Escreva a sua senha" name='password' autocomplete="off">
+                <input type='password' class='form-control' placeholder="Escreva a sua senha" name='password' autocomplete="off"
+                value=<?php echo $password; ?>
+                >
+                
             </div>
 
             <button type='submit' class='btn btn-primary my-2 btn-block' name='submit'>
-                Enviar</button>
+                Atualizar</button>
         </form>
     </div>
 
