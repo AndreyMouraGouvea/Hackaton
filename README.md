@@ -7,12 +7,14 @@
 -  Bruna
 -  Thiago
 -  Kayo Campos
--  Pedro
+-  Pedro Vitor
 -  Gustavo Gaque
 -  Ingrid
 -  Érico
 -  Anderson
-
+-  Gustavo 
+-  Luiz Pedro
+-  Talita
 
 ## CREATE
 
