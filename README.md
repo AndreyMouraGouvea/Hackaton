@@ -45,6 +45,10 @@ COL = $id;
 
 Always necessary to "include('connect.php') on every single file because it's where we have the connection with database
 
+#
+
+## View the app Running
+https://vestibulinhoetecowlcompany.000webhostapp.com/display.php
 
 
 
