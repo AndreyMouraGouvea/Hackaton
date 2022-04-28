@@ -1,0 +1,249 @@
+/* style do corpo */
+
+body{
+    font-family: 'JetBrains Mono', monospace;
+    color: #1c1c1c;
+}
+h1,h2,h3{
+    font-family: 'JetBrains Mono', monospace;
+    color: #000000;
+}
+.botao{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #191970;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+/* Navegação (NAV) */
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #191970;
+    box-sizing: border-box;
+
+}
+nav > a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: 'JetBrains Mono', monospace;
+}
+nav ul {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+
+}
+nav ul li {
+    text-align: center;
+    width: 100%;
+
+}
+nav ul li a{
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+
+
+
+/* CABEÇALHO */
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/camera.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px ;
+}
+header h1{
+    color: #FFFFFF;
+
+}
+/* EM => dobra o valor em pixel, sendo 10px, ficaria "20" */
+header p{
+    margin-bottom: 2em;
+}
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color: #191970;
+    color: #FFFFFF;
+
+}
+
+#sobre h2{
+    color: #FFFFFF;
+}
+#sobre p{
+
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+#sobre .botao{
+    background-color: #f1f1f1;
+    color: #1c1c1c;
+
+}
+
+
+/*SERVIÇOS */
+
+#serviços{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+}
+#serviços div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+/*FOTOS*/
+
+#fotos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+
+}
+#fotos h2{
+    margin-bottom: 20px;
+}
+#fotos img{
+    width: 100%;
+}
+
+
+/*CONTATO*/
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+
+
+}
+
+#contato h2{
+    color: #000000;
+
+}
+
+
+/*FOOTER*/
+
+footer{
+    text-align: center;
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: #191970;
+}
+footer a{
+    text-decoration: none;
+    color: #00FFFF;
+}
+
+
+/* RESPONSIVIDADE ATRAVÉS DE MEDIA QUERY */
+
+@media screen and (min-width: 768px){
+    /*nav*/
+
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav ul{
+        flex-direction: row;
+        width:70%;
+    }
+    /*cabeçalho */
+    header{
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    #sobre{
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+
+    #serviços{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    #serviços h2{
+        text-align: center;
+        width: 100%;
+    }
+
+    #serviços div{
+        flex-grow: 1;
+        flex-basis:150px;
+        padding: 0 10px;
+    }
+
+    #fotos{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #fotos h2{
+        width: 100%;
+        text-align: 100%;
+    }
+
+    #fotos img{
+        width: 33.333333333;
+    }
+
+    #contato{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #contato h2, #contato p{
+        width: 100%;
+    }
+}  
