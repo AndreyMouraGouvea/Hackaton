@@ -1,0 +1,50 @@
+# HACKATON 2022 - OWL COMPANY
+
+-  Abner Tomaz
+-  Andrey Moura
+-  Larissa
+-  Samara
+-  Bruna
+-  Thiago
+-  Kayo Campos
+-  Pedro
+-  Gustavo Gaque
+-  Ingrid
+-  Érico
+-  Anderson
+
+
+## CREATE
+
+```
+INSERT INTO `table` VALUES
+(null,'Valor 01', Valor 02);
+```
+
+## UPDATE
+
+```
+UPDATE `table` SET
+COL = 'Valor 01',
+COL2 = 'Valor 02
+WHERE COL = $id;
+
+```
+
+### DELETE
+
+```
+DELETE FROM `table` WHERE 
+COL = $id;
+
+```
+
+### 
+
+Always necessary to "include('connect.php') on every single file because it's where we have the connection with database
+
+
+
+
+
+
