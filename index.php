@@ -87,7 +87,7 @@
                 </ul>
                 <span class="navbar-text">
                     <button class="btn btn-primary nav-item" href="#">Login</button>
-                    <button class="btn btn-primary nav-item" href="#">Sign Up</button>
+                    <button class="btn btn-primary nav-item"><a href="#cadastro" style="text-decoration: none">Cadastro</a></button>
                     
                 </span>
             </div>
@@ -343,7 +343,7 @@
 
     <!-- Cadastro -->
     <!-- ----------------------------------------//------------------------- -->
-    <div class="container b d">
+    <div class="container b d" id="cadastro">
         <div class="col">
              <div class="row c">
                 <div class="col d">
@@ -362,7 +362,7 @@
                     </div>  
                 </div>
                 <div class="col offset-11">
-                    <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+                    <button type="submit" class="btn btn-primary mb-3" id="submit">Enviar</button>
                 </div>
             </form>
         </div>
