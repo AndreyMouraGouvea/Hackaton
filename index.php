@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="imagem/png" href="logo24px.png"/>
+    <link rel="icon" type="imagem/png" href="img/logo24px.png"/>
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -54,35 +54,35 @@
             text-align: center;
         }
     </style>
-    <title>CRUD</title>
+    <title>Vestibulinho Etec</title>
 </head>
 
 <body>
     <!-- HEADER -->
     <!-- ------------------------------------//----------------------------- -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #05377B;"">
-        <div class="container-fluid">
+        <div class="container-fluid" id="home">
             <a class="navbar-brand"><i class="fa-solid fa-feather a"></i></a>
             
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 a">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Cursos</a>
+                        <a class="nav-link active" href="#cursos">Cursos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Caléndário</a>
+                        <a class="nav-link active" href="#cal">Caléndário</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Informações Úteis</a>
+                        <a class="nav-link active" href="#info">Informações Úteis</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">FAQs</a>
+                        <a class="nav-link active" href="#faq">FAQs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Links Oficiais</a>
+                        <a class="nav-link active" href="#link">Links Oficiais</a>
                     </li>
                 </ul>
                 <span class="navbar-text">
@@ -143,7 +143,7 @@
 
     <!-- Cursos -->
     <!-- ----------------------------------------//------------------------- -->
-    <div class="container b d">
+    <div class="container b d" id="cursos">
         <div class="col">
             <div class="row c">
                 <div class="col d">
@@ -163,7 +163,7 @@
                     <ul>
                         <li>ETIM - Administração</li>
                         <li>ETIM - Desenvolvimento de Sistemas</li>
-                        <li>MTEC- Programação de Jogos Digitais</li>
+                        <li>MTEC - Programação de Jogos Digitais</li>
                     </ul>
                 </div>
                 <div class="col d e">
@@ -180,7 +180,7 @@
 
     <!-- Calendário -->
     <!-- ----------------------------------------//------------------------- -->
-    <div class="container">
+    <div class="container" id="cal">
         <div class="col">
             <div class="row">
                 <div class="col c d">
@@ -208,7 +208,7 @@
 
     <!-- Informações -->
     <!-- ----------------------------------------//------------------------- -->
-    <div class="container b d">
+    <div class="container b d" id="info">
         <div class="col">
             <div class="row c">
                 <div class="col d">
@@ -233,7 +233,7 @@
 
     <!-- Faq -->
     <!-- ----------------------------------------//------------------------- -->
-    <div class="container b d">
+    <div class="container b d" id="faq"> 
         <div class="col">
             <div class="row c">
                 <div class="col d">
@@ -283,7 +283,7 @@
                     <div class="row row-cols-1 row-cols-md-3 g-4 e">
                         <div class="col">
                             <div class="card h-100">
-                                <img src="1.png" class="card-img-top" alt="..." height="308px">
+                                <img src="img/1.png" class="card-img-top" alt="..." height="308px">
                                 <div class="card-body">
                                     <h5 class="card-title">Professor Luiz Fernando</h5>
                                     <h3><i class="fa-solid fa-quote-left"></i></h3><p class="card-text">Aqui na Etec temos liberdade. Essa liberdade torna os alunos independentes, criativos e mais humanos, tornando assim um local mais agradável.</p>
@@ -292,7 +292,7 @@
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="2.png" class="card-img-top" alt="...">
+                                <img src="img/2.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Professora Pamela</h5>
                                     <h3><i class="fa-solid fa-quote-left"></i></h3><p class="card-text">O que mais me agrada na Etec de Peruíbe é o espaço oferecido para a fromação do aluno como cidadão. A conquista da autonomia através da expressão e compartilhamento de suas realidades é o diferencial da escola.</p>
@@ -301,7 +301,7 @@
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="3.png" class="card-img-top" alt="...">
+                                <img src="img/3.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Professora Meire</h5>
                                     <h3><i class="fa-solid fa-quote-left"></i></h3><p class="card-text">O ponto forte da Etec de Peruíbe é a diversidade de cursos para atender aos diversos interesses e possibilidades da população local.</p>
@@ -310,7 +310,7 @@
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="4.png" class="card-img-top" alt="...">
+                                <img src="img/4.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Aluna Natália Campioni</h5>
                                     <h3><i class="fa-solid fa-quote-left"></i></h3><p class="card-text">A Etec me trouxe novas oportunidades e muitos conhecimentos, foi na Etec onde eu aprendi a ter mais responsabilidades. Me sinto mais preparada para o mercado de trabalho, pois agora já tenho uma ideia do que eu irei enfrentar.</p>
@@ -319,7 +319,7 @@
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="5.png" class="card-img-top" alt="...">
+                                <img src="img/5.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Aluna Gabrielle Souza</h5>
                                     <h3><i class="fa-solid fa-quote-left"></i></h3><p class="card-text">Com a Etec eu consegui ter várias experiências de como será minha vida profissional, com palestras e eventos, a Etec nos prepara para o mercado de trabalho.</p>
@@ -328,7 +328,7 @@
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="6.png" class="card-img-top" alt="...">
+                                <img src="img/6.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Aluno Thiago Kardec</h5>
                                     <h3><i class="fa-solid fa-quote-left"></i></h3><p class="card-text">Aqui na Etec você pode aprender diversos cursos. Não vai se arrepender de entrar na Etec, venha fazer o vestibulinho e tenha novas experiências!</p>
@@ -343,7 +343,7 @@
 
     <!-- Link Oficial -->
     <!-- ----------------------------------------//------------------------- -->
-    <div class="container b d">
+    <div class="container b d" id="link">
         <div class="col">
              <div class="row c">
                 <div class="col d">
@@ -367,12 +367,12 @@
     <div class="container">
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home • </a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Cursos • </a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Calendário • </a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Informações Úteis • </a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs • </a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Links Oficiais</a></li>                
+                <li class="nav-item"><a href="#home" class="nav-link px-2 text-muted">Home • </a></li>
+                <li class="nav-item"><a href="#cursos" class="nav-link px-2 text-muted">Cursos • </a></li>
+                <li class="nav-item"><a href="#cal" class="nav-link px-2 text-muted">Calendário • </a></li>
+                <li class="nav-item"><a href="#info" class="nav-link px-2 text-muted">Informações Úteis • </a></li>
+                <li class="nav-item"><a href="#faq" class="nav-link px-2 text-muted">FAQs • </a></li>
+                <li class="nav-item"><a href="#link" class="nav-link px-2 text-muted">Links Oficiais</a></li>                
             </ul>
             <p class="text-center text-muted">Owl Company <i class="fa-solid fa-feather"></i> + Etec de Peruíbe, <i class="fa-solid fa-copyright"></i> 2022 - 2022</p>
         </footer>
