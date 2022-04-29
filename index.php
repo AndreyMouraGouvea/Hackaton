@@ -62,7 +62,7 @@
     <!-- ------------------------------------//----------------------------- -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #05377B;"">
         <div class="container-fluid" id="home">
-            <a class="navbar-brand"><i class="fa-solid fa-feather a"></i></a>
+            <a class="navbar-brand"><img src="http://etecperuibe.com.br/wp-content/uploads/2021/02/Negativa.png" style="width: 50px; height: 30px;"></a>
             
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 a">
