@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="imagem/png" href="img/logo24px.png"/>
+    <link rel="icon" type="imagem/png" href="img/logo.png"/>
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -295,7 +295,7 @@
                                 <img src="img/2.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Professora Pamela</h5>
-                                    <h3><i class="fa-solid fa-quote-left"></i></h3><p class="card-text">O que mais me agrada na Etec de Peruíbe é o espaço oferecido para a fromação do aluno como cidadão. A conquista da autonomia através da expressão e compartilhamento de suas realidades é o diferencial da escola.</p>
+                                    <h3><i class="fa-solid fa-quote-left"></i></h3><p class="card-text">O que mais me agrada na Etec de Peruíbe é o espaço oferecido para a formação do aluno como cidadão. A conquista da autonomia através da expressão e compartilhamento de suas realidades é o diferencial da escola.</p>
                                 </div>
                             </div>
                         </div>
@@ -347,26 +347,24 @@
         <div class="col">
              <div class="row c">
                 <div class="col d">
-                    <h2>Cadastramento</h2>
+                    <h2>Cadastro</h2>
                 </div>
             </div>
             <div class="row e">
-                <div class="input-group mb-3">
-                    <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
-                    <input type="text" class="form-control" placeholder="Nome" name='name' aria-label="Nome">
+                <form method="POST" action='email.php'>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" class="form-control" placeholder="Nome" name='name' aria-label="Nome">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-at"></i></span>    
+                        <input type="text" class="form-control" placeholder="Email" name='email' aria-label="Email">
+                    </div>  
                 </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text"><i class="fa-solid fa-at"></i></span>    
-                    <input type="text" class="form-control" placeholder="Email" name='email' aria-label="Email">
-                </div>  
-                <div class="input-group mb-3">
-                    <span class="input-group-text"><i class="fa-solid fa-comment"></i></span>
-                    <textarea class="form-control" placeholder="Mensagem" name='message' rows="3"></textarea>
+                <div class="col offset-11">
+                    <button type="submit" class="btn btn-primary mb-3">Enviar</button>
                 </div>
-            </div>
-            <div class="col offset-11">
-                <button type="submit" class="btn btn-primary mb-3">Enviar</button>
-              </div>
+            </form>
         </div>
     </div><br>
     
